@@ -34,6 +34,7 @@
 
 
     <!-- toRightOf 在X的右边-->
+    <!--tools:text意思是只在预览的时候有用-->
     <TextView
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"

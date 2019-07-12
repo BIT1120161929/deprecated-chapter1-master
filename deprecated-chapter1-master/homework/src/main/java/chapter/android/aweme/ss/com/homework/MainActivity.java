@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import chapter.android.aweme.ss.com.homework.StartModle.AActivity;
 import chapter.android.aweme.ss.com.homework.widget.CircleImageView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_exercises1).setOnClickListener(this);
         findViewById(R.id.btn_exercises2).setOnClickListener(this);
         findViewById(R.id.btn_exercises3).setOnClickListener(this);
+        findViewById(R.id.btn_exercises4).setOnClickListener(this);
     }
 
     @Override
@@ -32,6 +34,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_exercises3:
                 startActivity(new Intent(this, Exercises3.class));
+                break;
+            case R.id.btn_exercises4:
+                startActivity(new Intent(this, AActivity.class));
                 break;
         }
     }
