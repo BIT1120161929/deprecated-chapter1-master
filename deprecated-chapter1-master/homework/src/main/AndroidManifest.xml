@@ -9,6 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".StartModle.DActivity"
+            android:launchMode="singleInstance"></activity>
+        <activity android:name=".StartModle.CActivity"
+            android:launchMode="singleTask"/>
+        <activity android:name=".StartModle.BActivity"
+            android:launchMode="singleTop"/>
+        <activity android:name=".StartModle.AActivity"
+            android:launchMode="standard"/>
+        <activity android:name=".MessageBoxActivity" />
+        <activity android:name=".Exercise1Intent" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,7 +27,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Exercises1" />
+        <activity
+            android:name=".Exercises1"
+            android:screenOrientation="sensor" />
         <activity android:name=".Exercises3" />
         <activity android:name=".Exercises2" />
     </application>
